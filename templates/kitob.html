@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitoblar</title>
+</head>
+<body>
+{%for kitob in kitoblar%}
+    <h2>{{forloop.counter}}.{{kitob.nom}}</h2>
+{%endfor%}
+</body>
+</html>

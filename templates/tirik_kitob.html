@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tirik kitoblar</title>
+</head>
+<body>
+<h1> Tirik mualliflarga tehishli kitoblar</h1>
+{%for kitob in kitoblar%}
+<h3>{{forloop.counter}}.{{kitob.nom}}-{{kitob.muallif.ism}}</h3>
+{%endfor%}
+</body>
+</html>

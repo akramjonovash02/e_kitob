@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{kitob.nom}}</title>
+</head>
+<body>
+<h1>{{kitob.nom}}</h1>
+<p>Muallif:{{kitob.muallif.ism}}</p>
+<p>Yil: {{ kitob.yil }}</p>
+<p>Bolim: {{ kitob.bolim.nom }}</p>
+    <form action="{% url 'kitob_ochirish' kitob.id %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Kitobni O'chirish</button>
+    </form>
+</body>
+</html>
